@@ -1,0 +1,16 @@
+<div class="grid">
+  <template ngFor let-tour [ngForOf]="tours">
+    <a href={{tour.url}}>
+      <figure>
+        <div class="wrapper">
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          <img src={{tour.imageUrl}} />
+        </div>
+
+        <figcaption>
+          {{tour.id}}. {{tour.title}}
+        </figcaption>
+      </figure>
+    </a>
+  </template>
+</div>
