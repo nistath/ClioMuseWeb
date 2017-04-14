@@ -1,0 +1,16 @@
+{{category}}
+<div class="grid">
+  <ng-template ngFor let-tour [ngForOf]="tours">
+    <a href={{tour.url}}>
+      <figure>
+        <div class="wrapper">
+          <img src={{tour.imageUrl}} />
+        </div>
+
+        <figcaption>
+          {{tour.id}}.{{tour.category}} {{tour.title}}
+        </figcaption>
+      </figure>
+    </a>
+  </ng-template>
+</div>

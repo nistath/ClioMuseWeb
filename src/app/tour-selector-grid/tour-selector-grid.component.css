@@ -1,0 +1,70 @@
+.grid {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  background-color: black;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 50em) {
+  a {
+    width: calc(25% - 6px);
+  }
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+figcaption {
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+}
+
+a:hover img {
+  transform: scale(0.95);
+}
+
+a:hover .wrapper {
+  opacity: 0.4;
+}
+
+i {
+  opacity: 1;
+}
+
+.wrapper {
+  opacity: 1;
+  background-color: #000;
+  transition: opacity .2s ease-in-out;
+  text-align: center;
+}
+
+.wrapper i {
+  opacity: 0;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .2s ease-in-out;
+}
+
+.p {
+  text-align: center;
+  font-size: 19px;
+  padding-top: 250px;
+}
